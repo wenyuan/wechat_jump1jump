@@ -13,10 +13,17 @@ def open_accordant_config():
     调用配置文件
     """
     screen_size = _get_screen_size()
-    config_file = "{path}/config/{screen_size}/config.json".format(
-        path=sys.path[0],
-        screen_size=screen_size
-    )
+    if True:    # 是否手动指定配置文件路径,不指定的话根据屏幕分辨率自动获取
+        config_file = "{path}/config/{mobile_brand}/{mobile_model}".format(
+            path=sys.path[0],
+            mobile_brand='mi',
+            mobile_model='mi5s_config.json'
+        )
+    else:
+        config_file = "{path}/config/{screen_size}/config.json".format(
+            path=sys.path[0],
+            screen_size=screen_size
+        )
     if os.path.exists(config_file):
         with open(config_file, 'r') as f:
             print("Load config file from {}".format(config_file))
