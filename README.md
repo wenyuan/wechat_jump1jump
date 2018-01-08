@@ -20,8 +20,8 @@ adb shell input swipe x y x y time(ms)
 1. 我是用的安卓机进行调试的,所以这里记录我的调试步骤
 2. ADB环境搭建
    - Android 或 Android 模拟器需要使用 ADB 进行连接
-   ADB驱动，可以到[这里](https://adb.clockworkmod.com/)下载
-   不过我使用的是[绿色版](http://adbshell.com/downloads),下载完直接解压,然后配置环境变量,在Path里添加ADB开发工具的所在路径,这里我的是 `D:\adb;` 别漏了分号
+   ADB驱动，可以到[这里](https://adb.clockworkmod.com/)下载</br>
+   不过我使用的是[绿色版](http://adbshell.com/downloads),下载完直接解压,然后配置环境变量,在Path里添加ADB开发工具的所在路径,这里我的是 `D:\adb;`
    - 打开windows的cmd命令窗口,输入 `adb` 按回车,如果显示很多adb的命令你的adb环境变量就配置成功了
 3. 我的是Windows系统,如下配置
    - 安装Python 2.7/3
