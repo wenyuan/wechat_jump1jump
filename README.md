@@ -1,5 +1,4 @@
 # 造轮子系列：用 Python 来玩微信跳一跳
-## 源码来自原作者[wangshub](https://github.com/wangshub/wechat_jump_game)
 
 ## 原理说明
 1. 将手机点击到《跳一跳》小程序界面
@@ -42,3 +41,7 @@ adb shell input swipe x y x y time(ms)
    - 如果屏幕分辨率能成功探测，会直接调用 config 目录的配置，不需要复制
    - 优先按机型去找，找不到再按分辨率
    - 如果都没有请找一个接近的自己的分辨率，或者调节一下找到合适的参数
+   
+ 
+## 参考的项目
+   * [wangshub](https://github.com/wangshub/wechat_jump_game)
